@@ -64,15 +64,15 @@ class Cpu{
         
         System.out.println("\nCPU DETAILS");       
        
-        System.out.println("\nENTER RAM MANUFACTURER NAME       : "+ RAMobject.Manufacturer);
+        System.out.println("\nRAM MANUFACTURER NAME       : "+ RAMobject.Manufacturer);
        
-        System.out.println("ENTER RAM MEMORY                  : "+ RAMobject.memory);
+        System.out.println("RAM MEMORY                  : "+ RAMobject.memory);
         
-        System.out.println("ENTER PROCESSOR MANUFACTURER NAME : "+ PROCESSOR.Manufacturer);
+        System.out.println("PROCESSOR MANUFACTURER NAME : "+ PROCESSOR.Manufacturer);
        
-        System.out.println("ENTER NO.OF.CORES                 : "+ PROCESSOR.No_of_Cores);
+        System.out.println("NO.OF.CORES                 : "+ PROCESSOR.No_of_Cores);
 
-        System.out.println("ENTER CPU PRICE                   : "+ price);
+        System.out.println("CPU PRICE                   : "+ price);
         
  
    }
@@ -103,8 +103,8 @@ public static void main(String args[]){
 
 OUTPUT
 ------
-ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . $ javac Computer.java
-ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . $ java Computer
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . CPU $ javac Computer.java
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . CPU $ java Computer
 ENTER CPU DETAILS
 
 ENTER RAM MANUFACTURER NAME       : ADATA
@@ -115,12 +115,11 @@ ENTER CPU PRICE                   : 46000
 
 CPU DETAILS
 
-ENTER RAM MANUFACTURER NAME       : ADATA
-ENTER RAM MEMORY                  : 8192
-ENTER PROCESSOR MANUFACTURER NAME : AMD
-ENTER NO.OF.CORES                 : 16
-ENTER CPU PRICE                   : 46000
-
+RAM MANUFACTURER NAME       : ADATA
+RAM MEMORY                  : 8192
+PROCESSOR MANUFACTURER NAME : AMD
+NO.OF.CORES                 : 16
+CPU PRICE                   : 46000
 
 */
 
