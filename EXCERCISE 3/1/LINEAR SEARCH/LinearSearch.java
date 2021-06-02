@@ -38,7 +38,7 @@ int i,j;
       if (Array[i]==SEARCH) // checking
       {
        System.out.println("NUMBER "+SEARCH+" FOUND AT "+(i+1)+" POSITION");
-       flag=0;  
+       flag=0; 
       }
       else
       {
