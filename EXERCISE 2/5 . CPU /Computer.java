@@ -7,13 +7,31 @@ class Cpu{
 
  
  int price;
-
-
-  
+ 
   //inner class  Processor
   class Processor{  
                
                String Manufacturer, No_of_Cores;
+
+                      //PROCESSOR data input function
+                     void inputData(){ 
+
+                        Scanner in = new Scanner(System.in);
+            
+                            System.out.print("ENTER PROCESSOR MANUFACTURER NAME : ");
+                              Manufacturer=in.next();
+ 
+                            System.out.print("ENTER NO.OF.CORES                 : ");
+                              No_of_Cores=in.next();
+                         }        
+
+                      void display(){
+        
+               
+                            System.out.println("PROCESSOR MANUFACTURER NAME : "+ Manufacturer);
+       
+                            System.out.println("NO.OF.CORES                 : "+ No_of_Cores); 
+                      }
 
                  }
 
@@ -26,55 +44,43 @@ class Cpu{
          
               String Manufacturer;
               int memory;
+
+                        void inputData(){ //input method for ram
+
+                           Scanner in = new Scanner(System.in);
+   
+                               System.out.print("ENTER RAM MANUFACTURER NAME       : ");
+                                 Manufacturer=in.next();
+ 
+                               System.out.print("ENTER RAM MEMORY                  : ");
+                                 memory=in.nextInt();                
+                      }
+
+                         void display(){//ram information displaying method
+        
        
+                           System.out.println("\nRAM MANUFACTURER NAME       : "+ Manufacturer);
+       
+                           System.out.println("RAM MEMORY                  : "+ memory);
+
+                     
+                          } 
                     }
 
-    Cpu.Ram RAMobject = new Cpu.Ram(); // created object of static class Ram 
 
-    Processor PROCESSOR = new Processor(); //created object of Processor
-    
-  
 
     void inputData(){ 
-
-    
-      Scanner in = new Scanner(System.in);
    
-        System.out.println("ENTER CPU DETAILS\n");    
-    
-        System.out.print("ENTER RAM MANUFACTURER NAME       : ");
-         RAMobject.Manufacturer=in.next();
- 
-        System.out.print("ENTER RAM MEMORY                  : ");
-         RAMobject.memory=in.nextInt();
-        
-          
-        System.out.print("ENTER PROCESSOR MANUFACTURER NAME : ");
-         PROCESSOR.Manufacturer=in.next();
- 
-        System.out.print("ENTER NO.OF.CORES                 : ");
-         PROCESSOR.No_of_Cores=in.next();
-
+      Scanner in = new Scanner(System.in);
+  
         System.out.print("ENTER CPU PRICE                   : ");
-        price=in.nextInt();
+         price=in.nextInt();
     }
 
 
    void display(){
         
-        System.out.println("\nCPU DETAILS");       
-       
-        System.out.println("\nRAM MANUFACTURER NAME       : "+ RAMobject.Manufacturer);
-       
-        System.out.println("RAM MEMORY                  : "+ RAMobject.memory);
-        
-        System.out.println("PROCESSOR MANUFACTURER NAME : "+ PROCESSOR.Manufacturer);
-       
-        System.out.println("NO.OF.CORES                 : "+ PROCESSOR.No_of_Cores);
-
-        System.out.println("CPU PRICE                   : "+ price);
-        
- 
+        System.out.println("CPU PRICE                   : "+ price);       
    }
 
 
@@ -86,13 +92,25 @@ class Computer{
 
 public static void main(String args[]){
 
-   Cpu NEWCPU = new Cpu(); // CREATING OBJECT OF Cpu
-  
-   NEWCPU.inputData(); //CALLING INPUT FUNCTION
+
+   Cpu CPUobject = new Cpu(); // CREATING OBJECT OF Cpu
+   Cpu.Ram    RAMobject        = new Cpu.Ram();   // created object of static class Ram 
+   Cpu.Processor  PROCESSORobject  = CPUobject.new Processor(); //created object of Processor inner class
    
-   NEWCPU.display();   // CALLING DISPLAY FUNCTION
-
-
+   
+       System.out.println("ENTER CPU DETAILS\n");  
+            //CALLING INPUT FUNCTION 
+         PROCESSORobject.inputData(); 
+         RAMobject.inputData();  
+         CPUobject.inputData(); 
+         
+       System.out.println("\nCPU DETAILS");   
+          // CALLING DISPLAY FUNCTION 
+          RAMobject.display();
+          PROCESSORobject.display();
+          CPUobject.display();      
+          
+              
 }}
 
 
@@ -100,26 +118,26 @@ public static void main(String args[]){
 
 
 /*
-
 OUTPUT
 ------
-ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . CPU $ javac Computer.java
-ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . CPU $ java Computer
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . CPU $ jc Computer.java 
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 2/5 . CPU $ jr Computer
 ENTER CPU DETAILS
 
-ENTER RAM MANUFACTURER NAME       : ADATA
-ENTER RAM MEMORY                  : 8192
 ENTER PROCESSOR MANUFACTURER NAME : AMD
-ENTER NO.OF.CORES                 : 16
-ENTER CPU PRICE                   : 46000
+ENTER NO.OF.CORES                 : 8
+ENTER RAM MANUFACTURER NAME       : ADATA
+ENTER RAM MEMORY                  : 4096
+ENTER CPU PRICE                   : 36000
 
 CPU DETAILS
 
 RAM MANUFACTURER NAME       : ADATA
-RAM MEMORY                  : 8192
+RAM MEMORY                  : 4096
 PROCESSOR MANUFACTURER NAME : AMD
-NO.OF.CORES                 : 16
-CPU PRICE                   : 46000
+NO.OF.CORES                 : 8
+CPU PRICE                   : 36000
+
 
 */
 
