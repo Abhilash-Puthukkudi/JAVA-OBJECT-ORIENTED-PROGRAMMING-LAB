@@ -136,21 +136,24 @@ public class StringManipulation{
         startIndex=in.nextInt();
  
 		System.out.println("SUB STRING "+string+" IS : "+string.substring(startIndex));
-		
+
+		//new string for replace operation
+        String newstring="ABHILASH";
+
         System.out.println("ENTER A STRING TO REPLACE : ");
         string1=in.next();
   
         System.out.println("REPLACE WITH : ");
-        string1=in.next();
+        string2=in.next();
 
-        System.out.println("RESULT OF REPLACED STRING : "+string.replace(string1,string2));
+        System.out.println("RESULT OF REPLACED STRING : "+newstring.replace(string1,string2));
 		
         System.out.println("-----USING valueOf()-----");
 
 		System.out.println("ENTER A FLOAT VALUE : ");
         float floatValue=in.nextFloat();
 
-		System.out.println(floatValue+" IS CONVERTED TO :ss "+String.valueOf(floatValue));  //float value is converted into string 
+		System.out.println(floatValue+" IS CONVERTED TO : "+String.valueOf(floatValue));  //float value is converted into string 
 	}
 }
 
@@ -232,7 +235,7 @@ ENTER A STRING TO REPLACE :
 ABHI
 REPLACE WITH : 
 abhi
-RESULT OF REPLACED STRING : ABHILASH
+RESULT OF REPLACED STRING : abhiLASH
 -----USING valueOf()-----
 ENTER A FLOAT VALUE : 
 10.02
