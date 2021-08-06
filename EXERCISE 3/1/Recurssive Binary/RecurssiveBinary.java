@@ -66,7 +66,32 @@ public static void main(String args[]){
           
 }}
 
+/*
 
+OUTPUT
+------
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 3/1/Recurssive Binary$ javac RecurssiveBinary.java
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 3/1/Recurssive Binary$ java RecurssiveBinary
+ENTER NUMBER OF ELEMENTS : 5
+ENTER ELEMENTS : 
+1) 1
+2) 2
+3) 3
+4) 4
+5) 5
+
+ENTERD ELEMENTS AFTER SORTING
+1) 1
+2) 2
+3) 3
+4) 4
+5) 5
+
+ENTER ELEMENT TO SEARCH  : 3
+3 FOUND AT 3 POSITION
+
+
+*/
 
     
 
