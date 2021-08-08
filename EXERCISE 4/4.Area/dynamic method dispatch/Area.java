@@ -97,3 +97,5 @@ AREA OF SQUARE : 25
 
 */
 
+//Area of square given for Rectangle
+
