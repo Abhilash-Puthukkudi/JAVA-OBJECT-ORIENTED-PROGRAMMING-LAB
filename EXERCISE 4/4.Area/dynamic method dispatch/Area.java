@@ -38,7 +38,7 @@ class Rectangle extends Shape{
 
   void area(){
  
-   System.out.println("AREA OF SQUARE : "+(width*length));
+   System.out.println("AREA OF RECTANGLE : "+(width*length));
 
   }
 
@@ -86,16 +86,17 @@ class Area{
 OUTPUT
 ------
 
-ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 4/4.Area$ javac Area.java
-ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 4/4.Area$ java Area
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 4/4.Area/dynamic method dispatch$ javac Area.java
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 4/4.Area/dynamic method dispatch$ java Area
 Area Of Shapes
-ENTER RECTANGLE WIDTH  : 10
-ENTER RECTANGLE HEIGHT : 5 
-AREA OF SQUARE : 50
+ENTER RECTANGLE WIDTH  : 5
+ENTER RECTANGLE HEIGHT : 5
+AREA OF RECTANGLE : 25
 ENTER SQAURE SIDE      : 5
 AREA OF SQUARE : 25
 
+
 */
 
-//Area of square given for Rectangle
+
 
