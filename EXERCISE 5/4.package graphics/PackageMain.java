@@ -32,7 +32,7 @@ class PackageMain{
      Triangle T = new Triangle(base,height);
      T.area();
      //reading radious
-     System.out.print("ENTER RADIOUS OF SQUARE : ");
+     System.out.print("ENTER RADIUS OF SQUARE : ");
      int radious = Integer.parseInt(in.nextLine());
      //object creation and calling area function
      Circle C = new Circle(radious);
@@ -59,7 +59,7 @@ Area : 25
 ENTER BASE OF TRIANGLE : 12
 ENTER HEIGHT OF TRIANGLE : 5
 Area : 30.0
-ENTER RADIOUS OF SQUARE : 2
+ENTER RADIUS OF SQUARE : 2
 Area : 12.566
 
 
@@ -67,3 +67,4 @@ Area : 12.566
 */
 
 
+//Verified
