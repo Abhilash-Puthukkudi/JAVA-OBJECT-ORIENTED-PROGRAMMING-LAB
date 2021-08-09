@@ -40,6 +40,6 @@ ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 5/3$ javac SSResult.jav
 ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 5/3$ java SSResult
 Academic Score is :120
 Sport Score is :30
-0
+
 
 */
