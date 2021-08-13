@@ -12,10 +12,10 @@ class FibonacciThread implements Runnable{
   
        try{
    
-            int n1=0,n2=1,n3,i,count=10;    
+            int n1=0,n2=1,n3,i;    
             System.out.println("FIBONACCI : "+n1);   //printing 0 and 1    
             System.out.println("FIBONACCI : "+n2);
-              for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
+              for(i=2;i<limit;++i)//loop starts from 2 because 0 and 1 are already printed    
               {    
                    n3=n1+n2;    
                    System.out.println("FIBONACCI : "+n3);    
