@@ -49,12 +49,13 @@ class EvennumbersThread implements Runnable{
     int limit = sc.nextInt();
   
    try{
-        int num=2;
+        
         for(int i =1;i<=limit;i++)
-        {
-            System.out.println("EVEN NO   : "+num);
-            Thread.sleep(250);
-            num=num+2;
+        {   
+            if(i%2 ==0){
+                System.out.println("EVEN NO   : "+i);
+                Thread.sleep(250);
+            }
         }
         
      }catch(InterruptedException e)
