@@ -89,11 +89,12 @@ class FibboEven
 /*
 OUTPUT
 ------
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 7/2. runnable interface$ javac FibboEven.java
 ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 7/2. runnable interface$ java FibboEven
-Enter No of Numbers for Even numbers : Enter No of Numbers for Fibonacci series :10
+Enter No of Numbers for Fibonacci series :Enter No of Numbers for Even numbers : 10
 10
-FIBONACCI : 0
 EVEN NO   : 2
+FIBONACCI : 0
 FIBONACCI : 1
 FIBONACCI : 1
 EVEN NO   : 4
@@ -104,17 +105,11 @@ EVEN NO   : 8
 FIBONACCI : 5
 EVEN NO   : 10
 FIBONACCI : 8
-EVEN NO   : 12
+EVEN THREAD FINISHED..!
 FIBONACCI : 13
-EVEN NO   : 14
 FIBONACCI : 21
 FIBONACCI : 34
-EVEN NO   : 16
 FIBBONACCI THREAD FINISHED..!
-EVEN NO   : 18
-EVEN NO   : 20
-EVEN THREAD FINISHED..!
-
 */
 
 
