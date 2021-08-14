@@ -42,7 +42,7 @@ class PrimenumberThread extends Thread{
                     while(count != limit) 
                     { // while count!= number of prime numbers entered keep searching..
                          boolean prime = true;// to determine whether the number is prime or not
-                         for (int i = 2; i <= Math.sqrt(num); i++) { //efficiency matters
+                         for (int i = 2; i <= Math.sqrt(num); i++) { 
                          
                             if (num % i == 0)
                             {
