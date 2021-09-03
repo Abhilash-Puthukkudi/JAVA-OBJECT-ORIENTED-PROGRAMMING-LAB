@@ -117,5 +117,7 @@ MULTIPLICATION TABLE THREAD COMPLETED
 
 
 */
-
-
+Verified
+Can enter limits from the main thread.
+No need to print the details of thread in output.
+Thread name only is enough or can give Prime no:
