@@ -46,9 +46,9 @@ class StackPushPop{
                            
                             Stack<Integer> IS = new Stack<>(size);
                             
-                                           while(opt!=4)
+                                           while(opt!=3)
                                            {            
-                                                 System.out.println(" 1. PUSH() \n 2.POP() \n 3.DISPLAY \n 4.EXIT");
+                                                 System.out.println(" 1. PUSH() \n 2.POP() \n 3.EXIT");
                                                      System.out.print("Choose your option : ");
                                                   opt = Integer.parseInt(in.nextLine());          
                                                 
@@ -58,19 +58,17 @@ class StackPushPop{
                                                               System.out.print("Enter Element : ");
                                                               int number = Integer.parseInt(in.nextLine());
                                                               IS.push(number);  
+                                                              IS.display();  
                                                               break;
                                                      case 2 : 
                                                                 if(IS.elements.size()>0){
                                                                 IS.pop();
                                                                 System.out.print("item poped");
+                                                                IS.display();  
                                                                 }
                                                                 else
                                                                     System.out.println("Stack is empty");  
                                                                 break;  
-                                                     case 3 : 
-                                                              IS.display();  
-                                                              break;          
-                                                              
                                                                         
                                                     }//end of inner switch 
                                             }//enf of inner while 
@@ -79,9 +77,9 @@ class StackPushPop{
                 case 2  :   //String Stack
                                     Stack<String> SS = new Stack<>(size);
                                     opt =0;
-                                           while(opt!=4)
+                                           while(opt!=3)
                                            {            
-                                                 System.out.println(" 1. PUSH() \n 2.POP() \n 3.DISPLAY \n 4.EXIT");
+                                                 System.out.println(" 1. PUSH() \n 2.POP() \n 3.EXIT");
                                                      System.out.print("Choose your option : ");
                                                   opt = Integer.parseInt(in.nextLine());          
                                                 
@@ -91,18 +89,18 @@ class StackPushPop{
                                                               System.out.print("Enter Element : ");
                                                               String str = in.nextLine();
                                                               SS.push(str);  
+                                                              SS.display(); 
                                                               break;
                                                      case 2 : 
                                                               if(SS.elements.size()>0){
                                                                 SS.pop();
-                                                                System.out.print("item poped");
+                                                                System.out.print("item poped\n");
+                                                                SS.display(); 
                                                               }
                                                               else
-                                                               System.out.println("Stack is empty");  
+                                                               System.out.println("Stack is empty\n");  
                                                               break;       
-                                                     case 3 : 
-                                                              SS.display();  
-                                                              break;         
+                                                           
                                                                   
                                                     }//end of inner switch 
                                             }//enf of inner while 
@@ -112,4 +110,87 @@ class StackPushPop{
                   }         
         }
 }
+
+/*
+OUTPUT
+------
+
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 9/3$ javac  StackPushPop.java
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 9/3$ java  StackPushPop
+
+Enter initial capacity of Stack : 5
+ 1.INTEGER STACK 
+ 2.STRING STACK 
+ 
+Choose your option : 1
+ 
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 1
+
+Enter Element : 1
+Stack : [1]
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 1
+
+Enter Element : 2
+Stack : [1, 2]
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 2
+
+item poped
+Stack : [1]
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 3
+
+ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 9/3$ java  StackPushPop
+Enter initial capacity of Stack : 3
+ 1.INTEGER STACK 
+ 2.STRING STACK 
+ 
+Choose your option : 2
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 1
+
+Enter Element : abhilash
+Stack : [abhilash]
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 1
+
+Enter Element : java
+Stack : [abhilash, java]
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 2
+
+item poped
+Stack : [abhilash]
+
+ 1. PUSH() 
+ 2. POP() 
+ 3. EXIT
+Choose your option : 3
+
+
+
+
+*/
 
