@@ -36,3 +36,4 @@ After removing elements in linked list: []
 
 
 */
+Verified
