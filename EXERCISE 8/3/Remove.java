@@ -63,3 +63,4 @@ Enter position of an object to remove : 2
 Stack after an element removed : python java 
 
 */
+Verified
