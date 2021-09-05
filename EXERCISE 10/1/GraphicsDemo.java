@@ -41,3 +41,4 @@ public class GraphicsDemo extends Frame {
 	}
 }
 
+Verified
