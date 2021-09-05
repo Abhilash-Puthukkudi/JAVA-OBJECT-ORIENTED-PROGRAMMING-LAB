@@ -34,3 +34,4 @@ ablas@ablas-HP-Notebook:~/Desktop/JAVA PROGRAMS/EXERCISE 9/2$ java HashToTreeMap
 HASH MAP : {1=HTML, 2=CSS, 3=JAVASCRIPT}
 TREE MAP : {1=HTML, 2=CSS, 3=JAVASCRIPT}
 */
+Verified
