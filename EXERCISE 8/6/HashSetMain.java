@@ -33,3 +33,4 @@ ablas@ablas-HP-Notebook:~/Desktop/shell tutorial/testfile/Exercise8/Question6$ j
 The elements in the set 
 one two three
 */
+Verified
