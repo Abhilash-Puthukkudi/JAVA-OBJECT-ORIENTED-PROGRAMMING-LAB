@@ -12,8 +12,6 @@ import java.awt.event.*;
     Button bplus,bmin,bmul,bdiv,beq,bclear;
     Label screen;
     
-	GridBagConstraints constraints = new GridBagConstraints();
-    
 	public Calculator() {
 
         this.setLayout(new GridLayout(7,1));
