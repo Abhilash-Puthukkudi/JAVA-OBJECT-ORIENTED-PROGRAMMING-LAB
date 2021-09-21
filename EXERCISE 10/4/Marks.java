@@ -8,17 +8,18 @@ import java.awt.event.*;
 
  class Marks extends Frame implements ActionListener {
 	TextField m1,m2,m3,m4,m5,mt;
-	int M1,M2,M3,M4,M5,TOTAL;
-    Double CP,MT;
+	int M1,M2,M3,M4,M5;
+    Double PERCENTAGE,MT;
     Button calculate;
     
 	
 	public Marks() {
        
         setLayout(new FlowLayout());
+         setBackground(Color.LIGHT_GRAY);
 
 // Create controls.
-    Label totalmarklabel = new Label("Enter Maximum Mark of Each Subject : ",Label.RIGHT);
+    Label totalmarklabel = new Label(" Maximum Mark of Each Subject : ",Label.RIGHT);
     Label mark1label = new Label("Enter Marks obtaind in Subject 1 : ",Label.RIGHT);
     Label mark2label = new Label("Enter Marks obtaind in Subject 2 : ",Label.RIGHT);
     Label mark3label = new Label("Enter Marks obtaind in Subject 3 : ",Label.RIGHT);
@@ -72,10 +73,8 @@ public void actionPerformed(ActionEvent ae) {
         M5=Integer.parseInt(m5.getText());
         MT=Double.parseDouble(mt.getText());
         
-        TOTAL = M1+M2+M3+M4+M5; // calculating TOTAL MARKS OBTAINED
-        //calculating pass mark
-        CP = MT*5; //calculating maximum mark
-        CP =CP *(0.5); // 50% mark Cuttoff Percentage
+        PERCENTAGE = (M1+M2+M3+M4+M5)/ (MT*5) * 100; //percentage calculation
+
         repaint();
 
     }
@@ -85,17 +84,13 @@ public void actionPerformed(ActionEvent ae) {
     // Display current selections.
 public void paint(Graphics g) {
 
-	
-    String total= "TOTAL MARKS OBTAINED : "+TOTAL +"  MINIMUM MARKS TO PASS : "+CP;
-
-  
-	if(TOTAL>CP) {
-        String Status="PASS";
+	if(PERCENTAGE>50) {
+        
         g.setFont(new Font("default", Font.BOLD, 19));
         g.setColor(Color.GREEN);
-        g.drawString(Status,80,200);
+        g.drawString("PASS",80,200);
         g.setFont(new Font("default", Font.BOLD, 15));
-		g.drawString(total,80,220);
+		g.drawString("PERCENTAGE : "+PERCENTAGE,80,220);
         // Oval for face outline
         g.setColor(Color.YELLOW);
         g.fillOval(260, 240, 200, 200);
@@ -111,13 +106,13 @@ public void paint(Graphics g) {
         g.fillArc(300, 350, 120, 60, 180, 180);
 
 	}
-    else if(TOTAL<=CP){
-        String Status=" FAILED ";
+    else if(PERCENTAGE<=50){
+      
         g.setFont(new Font("default", Font.BOLD, 19));
         g.setColor(Color.RED);
-        g.drawString(Status,200,200);
+        g.drawString("FAILED",80,200);
         g.setFont(new Font("default", Font.BOLD, 15));
-		g.drawString(total,80,230);
+		g.drawString("PERCENTAGE : "+PERCENTAGE,80,230);
         // Oval for face outline
         g.setColor(Color.YELLOW);
         g.fillOval(260, 240, 200, 200);
@@ -133,8 +128,6 @@ public void paint(Graphics g) {
         g.drawArc(300, 350, 120, 60, 0, 180);
 
     }
-
-	
 }
 
 public static void main(String[] args) {
