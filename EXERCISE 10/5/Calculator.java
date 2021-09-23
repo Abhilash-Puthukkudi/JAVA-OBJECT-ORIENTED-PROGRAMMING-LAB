@@ -120,7 +120,7 @@ public static void main(String[] args) {
     Calcuapp.setVisible(true);
 	}
 }
-
+Verified
 
 
 
